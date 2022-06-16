@@ -1,21 +1,17 @@
 {
-    "totalValue": 899,
-    "data": [
-      {
-        "label": "Product 1",
-        "value": 100
-      },
-      {
-        "label": "Product 2",
-        "value": 125
-      },
-      {
-        "label": "Product 3",
-        "value": 200
-      },
-      {
-        "label": "Product 4",
-        "value": 112
-      }
-    ]
-  }
+  "data": [
+    {
+      "name": "Product 1",
+      "cost": 100
+    },
+    {
+      "name": "Product 2",
+      "cost": 125
+    },
+    {
+      "name": "Product 3",
+      "cost": 200
+    }
+  ],
+  "totalValue": 1000
+}

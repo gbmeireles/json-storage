@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "name": "Product 1",
+      "cost": 100
+    },
+    {
+      "name": "Product 2",
+      "cost": 125
+    },
+    {
+      "name": "Product 3",
+      "cost": 200
+    }
+  ],
+  "totalValue": 1000
+}

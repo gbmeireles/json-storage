@@ -20,13 +20,18 @@ class SendTransferService {
         title: data.title,
         cid: data.clientId,
       })
-      .then(function () {
-        data.amount =
-          this.crs.calculateCommisionRate() > 0
-            ? data.amount + this.crs.calculateCommisionRate()
-            : data.amount;
+      .then(
+        function () {
+          data.amount =
+            this.crs.calculateCommisionRate() > 0
+              ? data.amount + this.crs.calculateCommisionRate()
+              : data.amount;
 
-        httpService.post({ date: date, data: data });
-      });
+          httpService.post({ date: date, data: data });
+        },
+        function (err) {
+          console.warn(err);
+        }
+      );
   }
 }
